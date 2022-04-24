@@ -1,3 +1,28 @@
+/* Permahover for letters */
+window.addEventListener('DOMContentLoaded', function() {
+  document.querySelector(".red").addEventListener('mouseover', function(event) {
+    document.querySelector(".red").classList.add('activated');
+  });
+});
+
+window.addEventListener('DOMContentLoaded', function() {
+    document.querySelector(".blue").addEventListener('mouseover', function(event) {
+        document.querySelector(".blue").classList.add('activated');
+    });
+});
+
+window.addEventListener('DOMContentLoaded', function() {
+    document.querySelector(".yellow").addEventListener('mouseover', function(event) {
+      document.querySelector(".yellow").classList.add('activated');
+    });
+});
+
+window.addEventListener('DOMContentLoaded', function() {
+    document.querySelector(".green").addEventListener('mouseover', function(event) {
+        document.querySelector(".green").classList.add('activated');
+    });
+});
+
 /* Style first word of poem line 
   https://www.jqueryscript.net/text/Styling-First-Word-Of-Any-Element-With-jQuery-CSS.html*/
 $(".redP").each(function() {

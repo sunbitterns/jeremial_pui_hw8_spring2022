@@ -127,26 +127,43 @@ body {
     cursor: url("cursor.png"), default;
 }
 
+
 /* Change color and rotate letters on hover */
-.red:hover {
+.red {
+    color: var(--gray);
+}
+
+.red.activated {
     color: var(--red);
     transform: scale(1.05) rotate(-6deg);
     transition-duration: 0.3s;
 }
 
-.blue:hover {
+.blue {
+    color: var(--gray);
+}
+
+.blue.activated {
     color: var(--blue);
     transform: scale(1.05) rotate(6deg); 
     transition-duration: 0.3s;
 }
 
-.yellow:hover {
+.yellow {
+    color: var(--gray);
+}
+
+.yellow.activated {
     color: var(--yellow);
     transform: scale(1.05) rotate(-6deg);
     transition-duration: 0.3s;
 }
 
-.green:hover {
+.yellow {
+    color: var(--gray);
+}
+
+.green.activated {
     color: var(--green);
     transform: scale(1.05) rotate(6deg); 
     transition-duration: 0.3s;
@@ -175,7 +192,6 @@ body {
     display: none;
     color: var(--gray);
 }
-
 .first-red {
     color: var(--red);
 }
@@ -191,3 +207,5 @@ body {
 .first-green {
     color: var(--green);
 }
+
+
