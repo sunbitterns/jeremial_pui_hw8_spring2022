@@ -1,3 +1,61 @@
+/* Style first word of poem line 
+  https://www.jqueryscript.net/text/Styling-First-Word-Of-Any-Element-With-jQuery-CSS.html*/
+$(".redP").each(function() {
+    // Some Vars
+    var elText,
+        openSpan = '<span class="first-red">',
+        closeSpan = '</span>';
+
+    // Make the text into array
+    elText = $(this).text().split(" ");
+
+    // Adding the open span to the beginning of the array
+    elText.unshift(openSpan);
+
+    // Adding span closing after the first word in each sentence
+    elText.splice(2, 0, closeSpan);
+
+    // Make the array into string 
+    elText = elText.join(" ");
+
+    // Change the html of each element to style it
+    $(this).html(elText);
+});
+
+$(".blueP").each(function() {
+    var elText,
+        openSpan = '<span class="first-blue">',
+        closeSpan = '</span>';
+    elText = $(this).text().split(" ");
+    elText.unshift(openSpan);
+    elText.splice(2, 0, closeSpan);
+    elText = elText.join(" ");
+    $(this).html(elText);
+});
+
+$(".yellowP").each(function() {
+    var elText,
+        openSpan = '<span class="first-yellow">',
+        closeSpan = '</span>';
+    elText = $(this).text().split(" ");
+    elText.unshift(openSpan);
+    elText.splice(2, 0, closeSpan);
+    elText = elText.join(" ");
+    $(this).html(elText);
+});
+
+$(".greenP").each(function() {
+    var elText,
+        openSpan = '<span class="first-green">',
+        closeSpan = '</span>';
+    elText = $(this).text().split(" ");
+    elText.unshift(openSpan);
+    elText.splice(2, 0, closeSpan);
+    elText = elText.join(" ");
+    $(this).html(elText);
+});
+
+/* Show poem lines on hover of alphabet */
 $(function () {
     $("#a").hover(function(){
         $("#aLine").show()

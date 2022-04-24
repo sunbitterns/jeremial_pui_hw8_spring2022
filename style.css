@@ -1,6 +1,6 @@
 /* Color Palette */
 :root { 
-    --red: #FF3131;
+    --red: #ff718b;
     --blue: #00B2FF;
     --yellow: #FFC907;
     --green: #00D02E;
@@ -68,22 +68,41 @@ body {
     letter-spacing: 2px;
 }
 
+/* Animation */
+
+@keyframes fadeInUp {
+    0% {
+        transform: translate3d(0, 10px, 0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+.fadeInUp {
+    animation: fadeInUp 1s;
+}
+
+.title {
+    font-size: 2.5vw;
+    font-family: 'karrik';
+    color: var(--grayOpac);
+    border-top: solid;
+    border-bottom: solid;
+    text-align: center;
+    padding: 0.5vw;
+    margin-top: 2vw;
+}
+
 /* Alphabet styling */
 .alphabetContainer {
     margin: 0;
     position: absolute;
-    top: 10%;
-    left: 5%;
-}
-
-.alphabetContainer h1 {
-    font-size: 4vw;
-    font-family: 'karrik';
-    color: var(--grayOpac);
-    margin-left: 12px;
-    margin-bottom: 35px;
-    border-top: solid;
-    border-bottom: solid;
+    top: 20%;
+    left: 15%;
 }
 
 .letterRow {
@@ -93,15 +112,15 @@ body {
     flex-wrap: nowrap;
     justify-content: center;
     align-items: flex-start;
-    padding-top: 2.5vh;
+    padding-top: 2vh;
 }
 
 .letter {
-    font-size: 6vw;
+    font-size: 5vw;
     font-family: 'karrik';
     color: var(--gray);
     padding-left: 10px;
-    padding-right: 30px;
+    padding-right: 20px;
 }
 
 .letter:hover {
@@ -138,13 +157,13 @@ body {
     font-size: 1vw;
     font-family: 'karrik';
     position: absolute;
-    top: 22%;
+    top: 24%;
     left: 65%;
 }
 
 .poemStanzaItalic {
     font-style: italic;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 .poemStanzaRegular {
@@ -154,20 +173,21 @@ body {
 
 .poem {
     display: none;
+    color: var(--gray);
 }
 
-.redP {
+.first-red {
     color: var(--red);
 }
 
-.blueP {
+.first-blue {
     color: var(--blue);
 }
 
-.yellowP {
+.first-yellow {
     color: var(--yellow);
 }
 
-.greenP {
+.first-green {
     color: var(--green);
 }

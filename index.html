@@ -5,155 +5,151 @@
         <title>The Alphabet Drill</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!--Stylesheets-->
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="csshake-little.css"/>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="main.js" type="text/javascript"></script>
     </head>
     <body>
         <div class="minWidthError">
             <p>This piece is best viewed in a wider browser window.</p>
         </div>
-
-        <div class="alphabetContainer">
+        
+        <div class="title">
             <h1>THE ALPHABET DRILL</h1>
+        </div>
+        
+        <div class="alphabetContainer">
+            
             <div class=letterRow>
                 <p class="letter red" id="a">Aa</p>
                 <p class="letter blue" id="b">Bb</p>
                 <p class="letter yellow" id="c">Cc</p>
                 <p class="letter green" id="d">Dd</p>
-                <p class="letter red" id="e">Ee</p>
+                
             </div>
 
             <div class=letterRow>
+                <p class="letter red" id="e">Ee</p>
                 <p class="letter blue" id="f">Ff</p>
                 <p class="letter yellow" id="g">Gg</p>
                 <p class="letter green" id="h">Hh</p>
+            </div>
+
+            <div class=letterRow>
                 <p class="letter red" id="i">Ii</p>
                 <p class="letter blue" id="j">Jj</p>
                 <p class="letter yellow" id="k">Kk</p>
-            </div>
-
-            <div class=letterRow>
                 <p class="letter green" id="l">Ll</p>
                 <p class="letter red" id="m">Mm</p>
                 <p class="letter blue" id="n">Nn</p>
-                <p class="letter yellow" id="o">Oo</p>
-                <p class="letter green" id="p">Pp</p>
             </div>
 
             <div class=letterRow>
+                <p class="letter yellow" id="o">Oo</p>
+                <p class="letter green" id="p">Pp</p>
                 <p class="letter red" id="q">Qq</p>
                 <p class="letter blue" id="r">Rr</p>
                 <p class="letter yellow" id="s">Ss</p>
-                <p class="letter green" id="t">Tt</p>
-                <p class="letter red" id="u">Uu</p>
             </div>
 
             <div class=letterRow>
+                <p class="letter green" id="t">Tt</p>
+                <p class="letter red" id="u">Uu</p>
                 <p class="letter blue" id="v">Vv</p>
                 <p class="letter yellow" id="w">Ww</p>
                 <p class="letter green" id="x">Xx</p>
+            </div>
+
+            <div class=letterRow>
                 <p class="letter red" id="y">Yy</p>
                 <p class="letter blue" id="z">Zz</p>
             </div>
+          
         </div>
         <div class="poemContainer">
             <div class="poemStanzaItalic">
-                <p class="poem redP" id="aLine">
-                   abide by the rules.
-                </p>
-                <p class="poem blueP" id="bLine">
-                    barricade the classroom door.
-                </p>
-                <p class="poem yellowP" id="cLine">
-                    close your mouth. stay quiet.
-                </p>
-                <p class="poem greenP" id="dLine">
-                    do not make a sound.
-                </p>
+                <p class="poem redP fadeInUp" id="aLine">Abide by the rules.</p>
+                <p class="poem blueP fadeInUp" id="bLine">Barricade the classroom door.</p>
+                <p class="poem yellowP fadeInUp" id="cLine">Close your mouth. Stay quiet</p>
+                <p class="poem greenP fadeInUp" id="dLine">Do not make a sound.</p>
             </div>
     
             <div class="poemStanzaRegular">
-                <p class="poem redP" id="eLine">
-                    every day students recite this chant, 
-                </p>
-                <p class="poem blueP" id="fLine">
-                    fervently and firm. dazed, they 
-                </p>
-                <p class="poem yellowP" id="gLine">
-                    give way to routine—
-                </p>
-                <p class="poem greenP" id="hLine">
-                    how comforting it is!
-                </p>
+                <p class="poem redP fadeInUp" id="eLine">Every day students recite this chant,</p>
+                <p class="poem blueP fadeInUp" id="fLine">Fervently and firm. Dazed, they</p>
+                <p class="poem yellowP fadeInUp" id="gLine">Give way to routine—</p>
+                <p class="poem greenP fadeInUp" id="hLine">How comforting it is!</p>
             </div>
     
             <div class="poemStanzaRegular">
-                <p class="poem redP" id="iLine">
-                    idyllic days stretch onward, as
+                <p class="poem redP fadeInUp" id="iLine">
+                    Idyllic days stretch onward, as
                 </p>
-                <p class="poem blueP" id="jLine">
-                    joyful lessons
+                <p class="poem blueP fadeInUp" id="jLine">
+                    Joyful lessons
                 </p>
-                <p class="poem yellowP" id="kLine">
-                    kidnap uneasiness and
+                <p class="poem yellowP fadeInUp" id="kLine">
+                    Kidnap uneasiness and
                 </p>
-                <p class="poem greenP" id="lLine">
-                    lay it to rest. 
+                <p class="poem greenP fadeInUp" id="lLine">
+                    Lay it to rest. 
                 </p>
-                <p class="poem redP" id="mLine">
-                    miles of tangled worries are knit
+                <p class="poem redP fadeInUp" id="mLine">
+                    Miles of tangled worries are knit
                 </p>
-                <p class="poem blueP" id="nLine">
-                    neatly into a blindfold.
+                <p class="poem blueP fadeInUp" id="nLine">
+                    Neatly into a blindfold.
                 </p>
             </div>
     
             <div class="poemStanzaItalic">
-                <p class="poem yellowP" id="oLine">
-                    obey the rules. don’t
+                <p class="poem yellowP fadeInUp" id="oLine">
+                    Obey the rules. don’t
                 </p>
-                <p class="poem greenP" id="pLine">
-                    panic, don’t talk. don’t
+                <p class="poem greenP fadeInUp" id="pLine">
+                    Panic, don’t talk. don’t
                 </p>
-                <p class="poem redP" id="qLine">
-                    question the rules. this is how we
+                <p class="poem redP fadeInUp" id="qLine">
+                    Question the rules. This is how we
                 </p>
-                <p class="poem blueP" id="rLine">
-                    reassemble safety and 
+                <p class="poem blueP fadeInUp" id="rLine">
+                    Reassemble safety and 
                 </p>
-                <p class="poem yellowP" id="sLine">
-                    sensibility. 
-                </p>
-            </div>
-    
-            <div class="poemStanzaRegular">
-                <p class="poem greenP" id="tLine">
-                    targets on backs go
-                </p>
-                <p class="poem redP" id="uLine">
-                    unaddressed. they are the 
-                </p>
-                <p class="poem blueP" id="vLine">
-                    victims of blissful ignorance, too 
-                </p>
-                <p class="poem yellowP" id="wLine">
-                    weary to feign alarm when
-                </p>
-                <p class="poem greenP" id="xLine">
-                    x-ray machines start transforming into doors. 
+                <p class="poem yellowP fadeInUp" id="sLine">
+                    Sensibility. 
                 </p>
             </div>
     
             <div class="poemStanzaRegular">
-                <p class="poem redP" id="yLine">
-                    yesterday’s rationality dissolves. today is the
+                <p class="poem greenP fadeInUp" id="tLine">
+                    Targets on backs go
+                </p> 
+                <p class="poem redP fadeInUp" id="uLine">
+                    Unaddressed. 
                 </p>
-                <p class="poem blueP" id="zLine">
-                    zenith of disarray.
+                <p class="poem blueP fadeInUp" id="vLine">
+                    Victims of blissful ignorance, too 
+                </p>
+                <p class="poem yellowP fadeInUp" id="wLine">
+                    Weary to feign alarm when
+                </p>
+                <p class="poem greenP fadeInUp" id="xLine">
+                    X-ray machines start transforming into doors. 
+                </p>
+            </div>
+    
+            <div class="poemStanzaRegular">
+                <p class="poem redP fadeInUp" id="yLine">
+                    Yesterday’s rationality dissolves. Today is the
+                </p>
+                <p class="poem blueP fadeInUp" id="zLine">
+                    Zenith of disarray.
                 </p>
             </div>
         </div>
+    
+    <!--Scripts-->
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="main.js" type="text/javascript"></script>
     </body>
 </html>
