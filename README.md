@@ -6,3 +6,4 @@ To-Do
 4. Add Reset button 
 5. Make lines appear in set position
 6. change color pallette
+7. figure out how to simplify js code

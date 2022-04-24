@@ -127,20 +127,11 @@ body {
     cursor: url("cursor.png"), default;
 }
 
-
 /* Change color and rotate letters on hover */
-.red {
-    color: var(--gray);
-}
-
 .red.activated {
     color: var(--red);
     transform: scale(1.05) rotate(-6deg);
     transition-duration: 0.3s;
-}
-
-.blue {
-    color: var(--gray);
 }
 
 .blue.activated {
@@ -149,18 +140,10 @@ body {
     transition-duration: 0.3s;
 }
 
-.yellow {
-    color: var(--gray);
-}
-
 .yellow.activated {
     color: var(--yellow);
     transform: scale(1.05) rotate(-6deg);
     transition-duration: 0.3s;
-}
-
-.yellow {
-    color: var(--gray);
 }
 
 .green.activated {

@@ -1,84 +1,27 @@
-/* Permahover for letters */
-window.addEventListener('DOMContentLoaded', function() {
-  document.querySelector(".red").addEventListener('mouseover', function(event) {
-    document.querySelector(".red").classList.add('activated');
-  });
-});
-
-window.addEventListener('DOMContentLoaded', function() {
-    document.querySelector(".blue").addEventListener('mouseover', function(event) {
-        document.querySelector(".blue").classList.add('activated');
-    });
-});
-
-window.addEventListener('DOMContentLoaded', function() {
-    document.querySelector(".yellow").addEventListener('mouseover', function(event) {
-      document.querySelector(".yellow").classList.add('activated');
-    });
-});
-
-window.addEventListener('DOMContentLoaded', function() {
-    document.querySelector(".green").addEventListener('mouseover', function(event) {
-        document.querySelector(".green").classList.add('activated');
-    });
-});
+/* Permahover */
+$('.letter').mouseover(function(){
+    $(this).addClass("activated");
+});  
 
 /* Style first word of poem line 
-  https://www.jqueryscript.net/text/Styling-First-Word-Of-Any-Element-With-jQuery-CSS.html*/
-$(".redP").each(function() {
-    // Some Vars
-    var elText,
-        openSpan = '<span class="first-red">',
-        closeSpan = '</span>';
+   Modified from: https://www.jqueryscript.net/text/Styling-First-Word-Of-Any-Element-With-jQuery-CSS.html*/
+function firstWord(a, b) {
+    $(a).each(function() {
+        var elText,
+            openSpan = '<span class='+b+'>';
+            closeSpan = '</span>';
+        elText = $(this).text().split(" ");
+        elText.unshift(openSpan);
+        elText.splice(2, 0, closeSpan);
+        elText = elText.join(" ");
+        $(this).html(elText);
+    });
+}
 
-    // Make the text into array
-    elText = $(this).text().split(" ");
-
-    // Adding the open span to the beginning of the array
-    elText.unshift(openSpan);
-
-    // Adding span closing after the first word in each sentence
-    elText.splice(2, 0, closeSpan);
-
-    // Make the array into string 
-    elText = elText.join(" ");
-
-    // Change the html of each element to style it
-    $(this).html(elText);
-});
-
-$(".blueP").each(function() {
-    var elText,
-        openSpan = '<span class="first-blue">',
-        closeSpan = '</span>';
-    elText = $(this).text().split(" ");
-    elText.unshift(openSpan);
-    elText.splice(2, 0, closeSpan);
-    elText = elText.join(" ");
-    $(this).html(elText);
-});
-
-$(".yellowP").each(function() {
-    var elText,
-        openSpan = '<span class="first-yellow">',
-        closeSpan = '</span>';
-    elText = $(this).text().split(" ");
-    elText.unshift(openSpan);
-    elText.splice(2, 0, closeSpan);
-    elText = elText.join(" ");
-    $(this).html(elText);
-});
-
-$(".greenP").each(function() {
-    var elText,
-        openSpan = '<span class="first-green">',
-        closeSpan = '</span>';
-    elText = $(this).text().split(" ");
-    elText.unshift(openSpan);
-    elText.splice(2, 0, closeSpan);
-    elText = elText.join(" ");
-    $(this).html(elText);
-});
+firstWord(".redP", "first-red");
+firstWord(".blueP", "first-blue");
+firstWord(".yellowP", "first-yellow");
+firstWord(".greenP", "first-green");
 
 /* Show poem lines on hover of alphabet */
 $(function () {
