@@ -1,0 +1,173 @@
+/* Color Palette */
+:root { 
+    --red: #FF3131;
+    --blue: #00B2FF;
+    --yellow: #FFC907;
+    --green: #00D02E;
+    --gray: rgb(183, 183, 183);
+    --darkGray: rgb(25, 25, 25);
+    --grayOpac: rgb(109, 109, 109);
+}
+
+/* Local Fonts */
+@font-face {
+    font-family: 'karrik';
+    src: url(../Karrik-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'karrik';
+    font-style: italic;
+    src: url(../Karrik-Italic.ttf);
+}
+
+
+/* Display Message if browser is not wide enough */
+.minWidthError {
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--darkGray);
+    color: var(--gray);
+    font-family: "karrik";
+    transition: 0.4s opacity;
+    pointer-events: none;
+}
+
+@media only screen and (max-width: 890px) {
+    .minWidthError {
+      opacity: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .minWidthError p {
+      width: 280px;
+    }
+}
+
+/* Window */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+body {
+    background: var(--darkGray);
+    letter-spacing: 2px;
+}
+
+/* Alphabet styling */
+.alphabetContainer {
+    margin: 0;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+
+.alphabetContainer h1 {
+    font-size: 4vw;
+    font-family: 'karrik';
+    color: var(--grayOpac);
+    margin-left: 12px;
+    margin-bottom: 35px;
+    border-top: solid;
+    border-bottom: solid;
+}
+
+.letterRow {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 2.5vh;
+}
+
+.letter {
+    font-size: 6vw;
+    font-family: 'karrik';
+    color: var(--gray);
+    padding-left: 10px;
+    padding-right: 30px;
+}
+
+.letter:hover {
+    cursor: url("cursor.png"), default;
+}
+
+/* Change color and rotate letters on hover */
+.red:hover {
+    color: var(--red);
+    transform: scale(1.05) rotate(-6deg);
+    transition-duration: 0.3s;
+}
+
+.blue:hover {
+    color: var(--blue);
+    transform: scale(1.05) rotate(6deg); 
+    transition-duration: 0.3s;
+}
+
+.yellow:hover {
+    color: var(--yellow);
+    transform: scale(1.05) rotate(-6deg);
+    transition-duration: 0.3s;
+}
+
+.green:hover {
+    color: var(--green);
+    transform: scale(1.05) rotate(6deg); 
+    transition-duration: 0.3s;
+}
+
+/* Poem text styling */
+.poemContainer {
+    font-size: 1vw;
+    font-family: 'karrik';
+    position: absolute;
+    top: 22%;
+    left: 65%;
+}
+
+.poemStanzaItalic {
+    font-style: italic;
+    margin-top: 10%;
+}
+
+.poemStanzaRegular {
+    font-style: regular;
+    margin-top: 5%;
+}
+
+.poem {
+    display: none;
+}
+
+.redP {
+    color: var(--red);
+}
+
+.blueP {
+    color: var(--blue);
+}
+
+.yellowP {
+    color: var(--yellow);
+}
+
+.greenP {
+    color: var(--green);
+}
