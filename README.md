@@ -3,9 +3,9 @@
 ### The Alphabet Drill
 
 ### Links
-Video: TBA
-[Figma] (https://www.figma.com/proto/MmtECgfe78p4qtwz4UaN0Z/PUI-Final-Project?page-id=0%3A1&node-id=7%3A382&viewport=241%2C48%2C0.15&scaling=min-zoom&starting-point-node-id=7%3A382&hide-ui=1)
-[Website] (https://sunbitterns.github.io/jeremial_pui_hw8_spring2022/index.html)
+* Video: TBA
+* [Figma] (https://www.figma.com/proto/MmtECgfe78p4qtwz4UaN0Z/PUI-Final-Project?page-id=0%3A1&node-id=7%3A382&viewport=241%2C48%2C0.15&scaling=min-zoom&starting-point-node-id=7%3A382&hide-ui=1)
+* [Website] (https://sunbitterns.github.io/jeremial_pui_hw8_spring2022/index.html)
 
 ### Description
 
@@ -28,3 +28,4 @@ because there was a lot of repetive code for applying colors and changing letter
 3. Remove color when you move to next line. 
 4. Info on school shootings? (information aspect)
 5. Record Video
+6. Suddenly entire site broke whyyyyyyyyyyyy
