@@ -15,22 +15,23 @@
     src: url(../Karrik-Regular.ttf);
 }
 
-@font-face {
-    font-family: 'karrik', italic;
-    src: url(../Karrik-Italic.ttf);
+@font-face {	
+    font-family: 'karrik';	
+    font-style: italic;	
+    src: url(../Karrik-Italic.ttf);	
 }
+
 
 /* Display Message if browser is not wide enough */
 .minWidthError {
-    cursor: default;
     opacity: 0;
-    transition: 0.4s opacity;
     height: 100%;
     width: 100%;
     position: fixed;
     z-index: 200;
     top: 0;
     left: 0;
+    overflow-x: hidden;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -38,13 +39,22 @@
     background-color: var(--darkGray);
     color: var(--gray);
     font-family: "karrik";
+    transition: 0.4s opacity;
+    pointer-events: none;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 890px) {
     .minWidthError {
       opacity: 100%;
     }
 }
+
+@media (max-width: 450px) {
+    .minWidthError p {
+      width: 280px;
+    }
+}
+
 /* Window */
 * {
     margin: 0;
@@ -103,7 +113,6 @@ body {
 .titleContainer a:hover {
     color: var(--gray);
 }
-
 /* Alphabet styling */
 .alphabetContainer {
     margin: 0;
@@ -202,3 +211,4 @@ body {
 .first-green {
     color: var(--green);
 }
+
