@@ -8,6 +8,11 @@ function permahover() {
 
 permahover();
 
+/* Reset */
+function resetPage(){
+    window.location.reload();
+} 
+
 /* Style first word of poem line 
    Modified from: https://www.jqueryscript.net/text/Styling-First-Word-Of-Any-Element-With-jQuery-CSS.html*/
 function firstWord(a, b) {

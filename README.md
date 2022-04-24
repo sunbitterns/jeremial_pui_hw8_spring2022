@@ -1,7 +1,7 @@
 ## The Alphabet Drill
 ### PUI HW8
 
-To-Do
-4. Add Reset button 
-5. Make lines appear in set position
-6. change color pallette
+To-Do:
+1. Make Lines appear in set position.
+2. Reverse animations on reset. 
+3. Remove color when you move to next line. 

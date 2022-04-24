@@ -1,12 +1,12 @@
 /* Color Palette */
 :root { 
-    --red: #FF3131;
-    --blue: #00B2FF;
-    --yellow: #FFC907;
-    --green: #00D02E;
-    --gray: rgb(183, 183, 183);
+    --red: #EE224A;
+    --blue: #0F89CA;
+    --yellow: #F9D930;
+    --green: #22aF4b;
+    --gray: #e2e2e2;
+    --gray2: #848484;
     --darkGray:#0F0F0F;
-    --grayOpac: rgb(109, 109, 109);
 }
 
 /* Local Fonts */
@@ -16,11 +16,9 @@
 }
 
 @font-face {
-    font-family: 'karrik';
-    font-style: italic;
+    font-family: 'karrik', italic;
     src: url(../Karrik-Italic.ttf);
 }
-
 
 /* Display Message if browser is not wide enough */
 .minWidthError {
@@ -87,15 +85,31 @@ body {
 }
 
 
-.title {
-    font-size: 2.5vw;
+.titleContainer {
     font-family: 'karrik';
-    color: var(--grayOpac);
+    font-size: 2.5vw;
+    color: var(--gray2);
+    margin-top: 2.5vw;
     border-top: solid;
     border-bottom: solid;
-    text-align: center;
-    padding: 0.5vw;
-    margin-top: 2vw;
+}
+
+.titleContainer h1 {
+    display: inline-block;
+    padding-left: 5vw;
+}
+
+.titleContainer a {
+    font-size: 1vw;
+    color: var(--gray2);
+    margin: 2.5vw 9vw 0vw 0vw;
+    text-decoration: none;
+    border-bottom: solid 1px;
+    float: right;
+}
+
+.titleContainer a:hover {
+    color: var(--gray);
 }
 
 /* Alphabet styling */
