@@ -1,7 +1,12 @@
-/* Permahover */
-$('.letter').mouseover(function(){
-    $(this).addClass("activated");
-});  
+/* Permahover + Hide instructions on hover*/
+function permahover() {
+    $('.letter').mouseover(function(){
+        $('.instructions').hide();
+        $(this).addClass("activated");
+    });  
+}
+
+permahover();
 
 /* Style first word of poem line 
    Modified from: https://www.jqueryscript.net/text/Styling-First-Word-Of-Any-Element-With-jQuery-CSS.html*/
