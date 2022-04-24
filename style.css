@@ -1,11 +1,11 @@
 /* Color Palette */
 :root { 
-    --red: #ff718b;
+    --red: #FF3131;
     --blue: #00B2FF;
     --yellow: #FFC907;
     --green: #00D02E;
     --gray: rgb(183, 183, 183);
-    --darkGray: rgb(25, 25, 25);
+    --darkGray:#0F0F0F;
     --grayOpac: rgb(109, 109, 109);
 }
 
