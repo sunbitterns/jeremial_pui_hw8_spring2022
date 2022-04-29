@@ -2,7 +2,7 @@
 ### The Alphabet Drill
 
 ### Links
-* Video: TBA
+* [Video](https://drive.google.com/file/d/1ycsPKnN2bT7yVk5k3GqJ-mRl5yxxwvtQ/view?usp=sharing)
 * [Figma](https://www.figma.com/proto/MmtECgfe78p4qtwz4UaN0Z/PUI-Final-Project?page-id=0%3A1&node-id=7%3A382&viewport=241%2C48%2C0.15&scaling=min-zoom&starting-point-node-id=7%3A382&hide-ui=1)
 * [Website](https://sunbitterns.github.io/jeremial_pui_hw8_spring2022/index.html)
 
