@@ -6,21 +6,35 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-      />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
     </head>
     <body>
         <div class="minWidthError">
             <p>This piece is best viewed in a wider browser window.</p>
         </div>
         
+        <!-- Learn More Modal -->
+        <div id="learnMore" class="modal">
+            <p> This poem was written as a companion piece to 
+                Autumn Blaylock's artwork "The Slaughter of 
+                the songbirds: Red, White, and Blue (2018)"
+                after the Parkland school shooting.
+                Please check out the piece and her work 
+                on her <a href="https://www.musseyart.com/slaughter-of-the-songbirds">
+                portfolio site.</a>                
+            </p>
+        </div>
+
+        <!-- Header -->
         <div class="titleContainer">
             <h1>THE ALPHABET DRILL</h1>
             <a href="index.html">Reset</a>
+            <a href="#learnMore" rel="modal:open">Learn More</a>
         </div>
         
+        <!-- Alphabet -->
         <div class="alphabetContainer">
-            
             <div class=letterRow>
                 <p class="letter red" id="a">Aa</p>
                 <p class="letter blue" id="b">Bb</p>
@@ -67,6 +81,8 @@
             </div>
           
         </div>
+
+        <!-- Poem -->
         <div class="poemContainer">
             <h3 class="instructions animate__animated animate__bounce">←← Hover over the letters.</h3>
 
@@ -120,5 +136,8 @@
     <!--Scripts-->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src="main.js" type="text/javascript"></script>
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     </body>
 </html>

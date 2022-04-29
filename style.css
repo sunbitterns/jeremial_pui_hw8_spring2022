@@ -86,7 +86,19 @@ body {
     animation: fadeInUp 1s;
 }
 
+/* Modal */
+.modal {
+    font-family: 'karrik';
+    letter-spacing: 0px;
+    background: var(--gray);
+    color: var(--darkGray);
+}
 
+.modal a {
+    color: var(--blue);
+}
+
+/* Header */
 .titleContainer {
     font-family: 'karrik';
     font-size: 2.5vw;
@@ -104,7 +116,7 @@ body {
 .titleContainer a {
     font-size: 1vw;
     color: var(--gray2);
-    margin: 2.5vw 9vw 0vw 0vw;
+    margin: 2.5vw 2vw 0vw 0vw;
     text-decoration: none;
     border-bottom: solid 1px;
     float: right;
@@ -113,6 +125,7 @@ body {
 .titleContainer a:hover {
     color: var(--gray);
 }
+
 /* Alphabet styling */
 .alphabetContainer {
     margin: 0;
@@ -147,6 +160,12 @@ body {
 .red.activated {
     color: var(--red);
     transform: scale(1.05) rotate(-6deg);
+    transition-duration: 0.3s;
+}
+
+.red.unactivated {
+    color: var(--red);
+    transform: scale(1) rotate(6deg);
     transition-duration: 0.3s;
 }
 

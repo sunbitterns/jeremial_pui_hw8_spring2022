@@ -1,3 +1,10 @@
+/* Learn more modal */
+$(document).ready(function(){
+    $("#myBtn").click(function(){
+        $("#myModal").modal()
+    });
+});
+
 /* Permahover + Hide instructions on hover*/
 function permahover() {
     $('.letter').mouseover(function(){
